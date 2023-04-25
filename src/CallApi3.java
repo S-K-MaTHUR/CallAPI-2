@@ -4,10 +4,10 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
-public class Main {
+public class CallApi3 {
     public static void main(String[] args) throws IOException, InterruptedException {
 
-        String url = "https://api.zippopotam.us/us/33162";
+        String url = "https://api.nationalize.io/?name=nathaniel";
 
         HttpRequest request = HttpRequest.newBuilder().GET().uri(URI.create(url)).build();
 
